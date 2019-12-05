@@ -1,0 +1,6 @@
+rgb values:
+64(rathin's resume),
+84(final value),
+86,
+88,
+90(while developing)

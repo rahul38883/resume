@@ -1,0 +1,270 @@
+:root {
+  --border: 1px solid lightgrey;
+  /*--bgcolor: rgba(90, 90, 90, 1);*/
+  /*--bgcolor: rgba(64, 64, 64, 1);*/
+  --bgcolor: rgba(84, 84, 84, 1);
+  --color: white;
+  --rcolor: black;
+  --padding: 7px;
+  --border-black: 1px solid black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	background-color: grey;
+  font-family: Calibri, sans-serif;
+  font-size: 11px;
+}
+
+div {
+  /*border: 1px solid black;*/
+}
+
+.main {
+	width: 8.5in;
+	height: 11in;
+	word-wrap: break-word;
+	/*margin: 10px auto;*/
+	background-color: white;
+  display: flex;
+}
+
+.main > div {
+
+}
+
+.main > .left {
+  flex: 2.3;
+  /*border-right: var(--border);*/
+  background: var(--bgcolor);
+  color: var(--color);
+  padding: 15px;
+}
+
+.main > .left a {
+  color: var(--color);
+}
+
+.left > div, .right > div {
+  padding: 20px 0;
+}
+
+.main > .right {
+  flex: 5;
+  padding: 12px;
+}
+
+.main > .right a {
+  color: var(--rcolor);
+}
+
+.right .content {
+  width: 100%;
+  border: var(--border-black);
+  padding: 0;
+}
+
+div {
+  /*border: 1px solid black;*/
+}
+
+div.heading {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+
+.contact-info > div {
+  border-bottom: var(--border);
+  padding: 7px 0;
+}
+
+.contact-info > div:first-child {
+  border-top: var(--border);
+}
+
+.icon-wrapper {
+  display: inline-block;
+  width: 20px;
+}
+
+.section-content.pins {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-content.pins > div {
+  border: 1px solid lightgrey;
+  padding: 5px;
+  margin: 3px;
+  margin-left: 0;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+
+.section-heading {
+  font-weight: bold;
+  border-bottom: var(--border);
+  padding: 5px 0;
+}
+
+.section-content {
+  padding: 7px 0;
+}
+
+.education > .section-content > div {
+  display: flex;
+  padding: 7px 0;
+}
+
+.education .year {
+  font-weight: bold;
+}
+
+.education .info {
+  margin-left: 20px;
+}
+
+/*.education .info > div:first-child {*/
+  /*font-weight: bold;*/
+/*}*/
+
+.font-bold {
+  font-weight: bold;
+}
+
+div {
+  /*border: 1px solid black;*/
+}
+
+.data-section-header,
+.data-header-content-header {
+  display: flex;
+  padding: 4.5px var(--padding);
+}
+
+.data-section-header {
+  justify-content: space-between;
+}
+
+.data-section-header,
+.data-header-content-header {
+  font-weight: bold;
+}
+
+.data-header-text {
+  flex: 1;
+}
+
+.data-header-content-header-text {
+  flex: 1;
+  text-align: left;
+}
+
+.data-header-content-header-text i {
+  font-size: 0.8em;
+}
+
+.data-header-content-header-position {
+  flex: 1;
+  text-align: center;
+}
+
+.data-header-content-header-period {
+  flex: 1;
+  text-align: right;
+}
+
+.data-header-content-content {
+  padding: 5px var(--padding);
+}
+
+.data-section-header {
+  background-color: var(--bgcolor);
+  color: var(--color);
+}
+
+.data-header-content-header {
+  background-color: lightgrey;
+}
+
+.header {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.data-header-content-content > ul {
+  margin: 0;
+  /*padding-inline-start: 28px;*/
+  /*padding-bottom: 2px;*/
+  /*padding-right: var(--padding);*/
+  /*list-style-position: outside;*/
+  padding: 0;
+}
+
+.data-header-content-content > ul > li {
+  list-style: none;
+  /*font-size: 20px;*/
+  position:relative;
+  padding-left: 12px;
+}
+
+.data-header-content-content > ul > li:before {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  content:'\2022';
+  font-size:19px;
+  vertical-align:middle;
+  line-height:20px;
+}
+
+.data-header-content-content.table {
+  padding: 0;
+}
+
+.data-header-content-content.table div {
+  /*border: 1px solid black;*/
+  /*border-collapse: collapse;*/
+}
+
+.data-header-content-content-group-name {
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: var(--border-black);
+  flex: 0.8;
+}
+
+.data-header-content-content-content {
+  flex: 5;
+}
+
+.data-header-content-content-content > .flex-row {
+  padding: 3.5px var(--padding);
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-header-content-content-content > .flex-row .year {
+  margin-left: 10px;
+}
+
+.data-header-content-content.table > div {
+  display: flex;
+}
+
+.data-header-content-content.table > div:not(:last-child),
+.data-header-content-content-content > .flex-row:not(:last-child) {
+  border-bottom: var(--border-black);
+}
+
+.no-decoration {
+  text-decoration: none;
+}
